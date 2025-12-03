@@ -95,6 +95,24 @@ body{
 .dota-img:hover{
     background-color: #fcb8ff;
 }
+.footer-link:nth-child(2){
+    margin: 0 24px;
+}
+.logo{
+    animation: rotation 8s infinite linear ;
+}
+.logo:hover{
+    animation-play-state: paused;
+}
+    @keyframes rotation{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
 @media (max-width: 991px) {
     .menu-bg {
     background-color: #323335;
@@ -121,7 +139,13 @@ body{
     .fortnite-img {
     margin: 0;
     }
-    . hero-title {
+    .hero-title {
     font-size: 38px;
+    }
+    .footer-content{
+    flex-direction: column;
+    }
+    .footer-link:nth-child(2){
+    margin: 0;
     }
 }
